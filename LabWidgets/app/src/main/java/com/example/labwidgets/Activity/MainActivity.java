@@ -1,12 +1,13 @@
 package com.example.labwidgets.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.labwidgets.R;
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private RatingBar rBar;
     private TextView tView;
     private Button btn;
+    private Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +24,20 @@ public class MainActivity extends AppCompatActivity {
         rBar = (RatingBar) findViewById(R.id.estrellas);
         tView = (TextView) findViewById(R.id.campoTexto);
         btn = (Button)findViewById(R.id.btnGet);
+        btn2 = (Button) findViewById(R.id.next);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int noofstars = rBar.getNumStars();
                 float getrating = rBar.getRating();
                 tView.setText("Rating: "+getrating+"/"+noofstars);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), ProgressActivity.class);
+                startActivity(i);
             }
         });
 

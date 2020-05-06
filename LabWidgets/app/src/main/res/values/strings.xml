@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LabWidgets</string>
+    <string name="loading_complete">Loading Complete</string>
 </resources>
