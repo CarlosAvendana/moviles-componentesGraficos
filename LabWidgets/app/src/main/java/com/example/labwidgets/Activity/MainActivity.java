@@ -36,11 +36,12 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), ProgressActivity.class);
+                Intent i = new Intent(getBaseContext(), Inicio.class);
                 startActivity(i);
             }
         });
 
 
     }
+
 }
