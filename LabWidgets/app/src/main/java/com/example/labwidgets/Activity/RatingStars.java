@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.labwidgets.R;
 
-public class MainActivity extends AppCompatActivity {
+public class RatingStars extends AppCompatActivity {
     private RatingBar rBar;
     private TextView tView;
     private Button btn;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         rBar = (RatingBar) findViewById(R.id.estrellas);
         tView = (TextView) findViewById(R.id.campoTexto);
         btn = (Button)findViewById(R.id.btnGet);
-        btn2 = (Button) findViewById(R.id.next);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,13 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 tView.setText("Rating: "+getrating+"/"+noofstars);
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), VideoView_Activity.class);
-                startActivity(i);
-            }
-        });
+
 
 
     }
