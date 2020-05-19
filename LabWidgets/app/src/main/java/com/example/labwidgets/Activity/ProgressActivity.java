@@ -22,27 +22,27 @@ public class ProgressActivity extends AppCompatActivity {
         setContentView(R.layout.activity_progress);
 
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
-        mLoadingText = (TextView) findViewById(R.id.TX);
+                mLoadingText = (TextView) findViewById(R.id.TX);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(mProgressStatus<100){
-                    mProgressStatus++;
-                    android.os.SystemClock.sleep(50);
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                       mProgressBar.setProgress(mProgressStatus);
-                        }
-                    });
-                }
-                mHandler.post(new Runnable() {
+                new Thread(new Runnable() {
                     @Override
                     public void run() {
-                   mLoadingText.setVisibility(View.VISIBLE);
-                    }
-                });
+                        while(mProgressStatus<100){
+                            mProgressStatus++;
+                            android.os.SystemClock.sleep(50);
+                            mHandler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    mProgressBar.setProgress(mProgressStatus);
+                                }
+                            });
+                        }
+                        mHandler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                mLoadingText.setVisibility(View.VISIBLE);
+                            }
+                        });
             }
         }).start();
 
