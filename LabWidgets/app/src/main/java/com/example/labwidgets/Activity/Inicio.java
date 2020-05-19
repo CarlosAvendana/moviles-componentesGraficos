@@ -59,7 +59,11 @@ public class Inicio extends AppCompatActivity {
     }
 
     public void sendToNavDra() {
+<<<<<<< Updated upstream
         Intent i = new Intent(getBaseContext(), NavDrawer.class);
+=======
+        Intent i = new Intent(getBaseContext(), RatingStars.class);
+>>>>>>> Stashed changes
         startActivity(i);
         finish();
 
