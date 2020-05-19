@@ -81,6 +81,7 @@ public class NavDrawer extends AppCompatActivity
     public void abrirBarra() {
         Intent intent = new Intent(this, Inicio.class);
         startActivity(intent);
+        finish();
     }
 
     public void abrirRatingStars() {
