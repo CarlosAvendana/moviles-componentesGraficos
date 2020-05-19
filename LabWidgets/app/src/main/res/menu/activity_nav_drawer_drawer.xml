@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_barra"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_barra" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_rating" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_video" />
+        <item
+            android:id="@+id/nav_webview"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_webview" />
+
+    </group>
+</menu>
