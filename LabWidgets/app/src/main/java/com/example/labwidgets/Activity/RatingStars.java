@@ -25,7 +25,7 @@ public class RatingStars extends AppCompatActivity {
 
         rBar = (RatingBar) findViewById(R.id.estrellas);
         tView = (TextView) findViewById(R.id.campoTexto);
-        btn = (Button)findViewById(R.id.btnGet);
+        btn = (Button) findViewById(R.id.btnGet);
 
         btnInicio = (Button) findViewById(R.id.InicioBTN);
         btnSeekBar = (Button) findViewById(R.id.seekbarBTN);
@@ -35,7 +35,7 @@ public class RatingStars extends AppCompatActivity {
             public void onClick(View v) {
                 int noofstars = rBar.getNumStars();
                 float getrating = rBar.getRating();
-                tView.setText("Rating: "+getrating+"/"+noofstars);
+                tView.setText("Rating: " + getrating + "/" + noofstars);
             }
         });
 

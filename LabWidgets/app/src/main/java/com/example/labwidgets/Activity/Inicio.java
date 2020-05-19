@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +24,7 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-        Button ingreso= (Button) findViewById(R.id.ingresoBtn);
+        Button ingreso = (Button) findViewById(R.id.ingresoBtn);
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar2);
         mLoadingText = (TextView) findViewById(R.id.textbarcompleto);
 

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#283839"
     tools:context=".Activity.WebView_Activity">
+
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"

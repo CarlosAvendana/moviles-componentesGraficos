@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Inicio"
-    android:orientation="vertical"
+    android:background="#283839"
     android:gravity="center"
-    android:background="#283839">
+    android:orientation="vertical"
+    tools:context=".Activity.Inicio">
 
 
     <ImageView
@@ -18,9 +18,9 @@
 
     <Button
         android:id="@+id/ingresoBtn"
-        android:layout_marginTop="10dp"
         android:layout_width="105dp"
         android:layout_height="61dp"
+        android:layout_marginTop="10dp"
         android:text="Ingresar" />
 
     <ProgressBar
@@ -39,10 +39,10 @@
         android:layout_below="@id/progressBar2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="@string/loading_complete"
-        android:textSize="24sp"
         android:gravity="center"
+        android:text="@string/loading_complete"
         android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
         android:visibility="invisible" />
 
 </LinearLayout>
