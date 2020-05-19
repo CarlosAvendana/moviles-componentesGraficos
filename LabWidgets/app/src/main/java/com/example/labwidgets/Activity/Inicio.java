@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -59,7 +60,7 @@ public class Inicio extends AppCompatActivity {
     }
 
     public void sendToNavDra() {
-        Intent i = new Intent(getBaseContext(), NavDrawer.class);
+        Intent i = new Intent(getBaseContext(),WebView_Activity.class);
         startActivity(i);
         finish();
 

@@ -19,6 +19,7 @@
             android:id="@+id/video_view"
             android:layout_width="377dp"
             android:layout_height="209dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
