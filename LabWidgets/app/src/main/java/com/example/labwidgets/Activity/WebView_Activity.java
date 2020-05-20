@@ -19,7 +19,7 @@ public class WebView_Activity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        //webView.loadUrl("http://www.google.com");
+        webView.loadUrl("http://www.google.com");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }
