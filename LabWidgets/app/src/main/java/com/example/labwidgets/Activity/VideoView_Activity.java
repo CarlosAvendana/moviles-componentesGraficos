@@ -40,6 +40,7 @@ public class VideoView_Activity extends AppCompatActivity {
         });
 
         VideoView videoView = findViewById(R.id.video_view);
+
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
